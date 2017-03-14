@@ -1,0 +1,349 @@
+/* BEGIN 970 */
+@media screen and (max-width:970px) {
+
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .site-header {
+        height: 90px;
+    }
+
+    .site-logo {
+        padding: 30px 0 25px;
+    }
+
+    .site-logo img {
+        max-height: 35px;
+    }
+
+    .primary-nav {
+        display: none;
+    }
+
+    .toggle-mobile {
+        display: block;
+    }
+
+    .primary-nav {
+        background-color: rgba(0, 0, 0, 0.8);
+        display: block;
+        float: none;
+        height: 100%;
+        padding: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        transform: translateX(1000px);
+        transition: all 0.7s ease 0s;
+        -webkit-transition: all 0.7s ease 0s;
+        width: 40vw;
+        z-index: 999;
+        margin: 0;
+    }
+
+    .primary-nav ul {
+        padding-top: 90px;
+    }
+
+    .primary-nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .primary-nav ul li.current-menu-item {
+        background-color: rgba(35,150,243,0.7);
+    }
+
+    .primary-nav ul li {
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .primary-nav ul li a {
+        display: block;
+        padding: 20px 10px;
+        margin: 0;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .primary-nav ul li a:hover {
+        background-color: rgba(255,255,255,0.1);
+    }
+
+    .primary-nav ul li a:after,
+    .primary-nav ul li a:before {
+        display: none;
+    }
+
+    .menu--open .primary-nav {
+        transform: translateX(0px);
+    }
+
+    .menu--open .primary-nav:after {
+        content: '';
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        left: -100vw;
+        top: 0;
+        background-color: rgba(0,0,0,0.7);
+    }
+
+    .content {
+        margin: 30px 0 40px;
+        width: 100%;
+    }
+
+    .hero .wrap {
+        bottom: 30px;
+    }
+
+    .hero .wrap small {
+        font-size: 18px;
+        letter-spacing: 2.5px;
+    }
+
+    .hero .wrap #typed,
+    .hero .wrap .typed-cursor {
+        font-size: 28px;
+        letter-spacing: 3.3px;
+    }
+
+    .about .five.columns {
+        display: none;
+    }
+
+    .about .seven.columns {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .about .img-mobile {
+        display: inline-block;
+        border-radius: 100%;
+        max-height: 250px;
+        margin-bottom: 25px;
+        margin-top: 5px;
+    }
+
+    .about .row p {
+        height: auto;
+    }
+
+    .portfolio .six.columns:first-child {
+        padding-right: 20px;
+    }
+
+    .portfolio .six.columns:last-child {
+        padding-left: 20px;
+    }
+
+}
+/* END 970 */
+
+/* BEGIN 720 */
+@media screen and (max-width:720px) {
+
+    .portfolio h2.title-underline {
+        padding-bottom: 10px;
+        font-size: 22px;
+    }
+
+    .categories ul {
+        width: 100%;
+    }
+
+    .list-images {
+        margin-bottom: 0;
+    }
+
+    .list-images li {
+        width: 100%;
+    }
+
+    .list-images li:nth-child(2n) {
+        margin-left: 0;
+    }
+
+    .image-hover img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+    }
+
+}
+/* END 720 */
+
+/* BEGIN 600 */
+@media screen and (max-width:600px) {
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .content {
+        margin: 30px 0;
+    }
+
+    .site-header {
+        height: 60px;
+    }
+
+    .site-logo {
+        padding: 18px 0 13px;
+    }
+
+    .site-logo img {
+        max-height: 28px;
+    }
+
+    .toggle-mobile .close_line, .toggle-mobile::before, .toggle-mobile::after {
+        width: 45px;
+        left: 58%;
+        height: 6px;
+    }
+
+    .toggle-mobile::before {
+        transform: translateY(-11px);
+    }
+
+    .toggle-mobile::after {
+        transform: translateY(11px);
+    }
+
+    .primary-nav {
+        width: 60vw;
+    }
+
+    .primary-nav ul li a {
+        font-size: 16px;
+    }
+
+    .hero {
+        height: calc(100vh - 207px);
+    }
+
+    .hero .wrap small {
+        font-size: 16px;
+        letter-spacing: 2.2px;
+    }
+
+    .hero .wrap #typed,
+    .hero .wrap .typed-cursor {
+        font-size: 24px;
+        letter-spacing: 2.8px;
+    }
+
+    .about .wrap h2 {
+        font-size: 28px;
+    }
+
+    .about .wrap h3 {
+        font-size: 22px;
+    }
+
+    .about .img-mobile {
+        max-height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .site-footer .copy {
+        font-size: 12px;
+        padding: 15px 0;
+    }
+
+    .copy__line {
+        display: block;
+    }
+
+    .copy__divider {
+        display: none;
+    }
+}
+/* END 600 */
+
+/* BEGIN 520 */
+@media screen and (max-width:520px) {
+
+    .hero .wrap {
+        bottom: 20px;
+    }
+
+    .hero .wrap small {
+        font-size: 16px;
+        letter-spacing: 1.8px;
+    }
+
+    .hero .wrap #typed,
+    .hero .wrap .typed-cursor {
+        font-size: 18px;
+        letter-spacing: 2.4px;
+    }
+
+    .contact h2 {
+        font-size: 24px;
+    }
+
+    .contact-details .three.columns {
+        width: 100%;
+        float: none;
+        padding: 20px 0;
+    }
+
+    .contact-details .three.columns:not(:last-child) {
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .contact-details .wrap {
+        margin: 0;
+    }
+}
+/* END 520 */
+
+/* BEGIN 420 */
+@media screen and (max-width:420px) {
+
+    .about .six.columns {
+        width: 100%;
+    }
+
+    .about .wrap {
+        width: 90%;
+    }
+
+    .about .six.columns:first-child,
+    .about .six.columns:last-child {
+        padding: 0;
+    }
+
+    .about .six.columns:first-child::after {
+        display: none;
+    }
+
+    .about .row p {
+        margin-bottom: 15px;
+    }
+
+    .portfolio .six.columns {
+        width: 100%;
+    }
+
+    .portfolio .six.columns:first-child {
+        border-right: 0;
+        padding: 0;
+    }
+
+    .portfolio .six.columns:last-child {
+        padding: 0;
+    }
+
+    .image-hover img {
+        max-height: 200px;
+    }
+
+}
+/* END 420 */

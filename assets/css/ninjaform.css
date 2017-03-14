@@ -1,0 +1,137 @@
+fieldset, input, select, textarea {
+    margin-bottom: 15px;
+}
+
+.ninja-forms-required-items {
+    display: none;
+}
+
+.ninja-forms-cont {
+    margin-top: 60px;
+}
+
+.bti-lm-col2-2-2 {
+    padding-left: 45px;
+}
+
+.field-wrap, #ninja_forms_required_items {
+    margin-bottom: 30px !important;
+}
+
+.ninja-forms-field {
+    background-color: transparent;
+}
+
+.field-wrap.text-wrap.label-below,
+.field-wrap.textarea-wrap.label-below{
+    position: relative;
+}
+
+.ninja-forms-form .label-above label, .ninja-forms-form .label-below label {
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.ninja-forms-field.ninja-forms-req {
+    border: 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.field-wrap.text-wrap.label-below.ninja-forms-error input,
+.field-wrap.textarea-wrap.label-below.ninja-forms-error textarea {
+    border-bottom: 2px solid red !important;
+}
+
+.ninja-forms-form .label-above label, .ninja-forms-form .label-below label {
+    color: #616161;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    font-weight: 300;
+    transform: translate(0, -20px);
+    transition: all 0.15s ease-out;
+}
+
+.bti-lm-2 .ninja-forms-all-fields-wrap input[type="text"]:focus~label, .ninja-forms-all-fields-wrap textarea:focus~label {
+    color: #2396f3;
+}
+
+#ninja_forms_form_2_response_msg > p {
+    display: block;
+    margin-bottom: 45px;
+}
+
+.textarea-wrap textarea {
+    height: auto !important;
+    min-height: 99px;
+}
+
+.ninja-forms-all-fields-wrap input[type="submit"] {
+    -moz-user-select: none;
+    background-color: #2396f3;
+    background-image: none;
+    border: 1px solid #2396f3;
+    border-radius: 2px;
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    height: auto;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    overflow: hidden;
+    padding: 0 26px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    transition: all 0.4s ease-in-out 0s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.bti-lm-2 .ninja-forms-all-fields-wrap input[type="text"], .bti-lm-2 .ninja-forms-all-fields-wrap input[type="number"], .bti-lm-2 .ninja-forms-all-fields-wrap input[type="password"], .bti-lm-2 .ninja-forms-all-fields-wrap textarea, .bti-lm-2 .ninja-forms-all-fields-wrap select {
+    border-bottom: 1px solid #616161 !important;
+    color: rgba(255,255,255,0.7);
+}
+
+.bti-lm-2 .ninja-forms-all-fields-wrap input[type="text"]:focus, .bti-lm-2 .ninja-forms-all-fields-wrap input[type="number"]:focus, .bti-lm-2 .ninja-forms-all-fields-wrap input[type="password"]:focus, .bti-lm-2 .ninja-forms-all-fields-wrap textarea:focus, .bti-lm-2 .ninja-forms-all-fields-wrap select:focus {
+    border-bottom: 2px solid #2396f3 !important;
+    outline: none;
+    margin-bottom: 14px;
+}
+
+.ninja-forms-all-fields-wrap input[type="submit"]:hover {
+    background-color: #FFF;
+    border: 1px solid #2396f3;
+    color: #2396f3;
+    border-radius: 2px !important;
+}
+
+@media screen and (max-width:600px) {
+
+    div[class*="bti-lm-col2-2-"] {
+        width: 100% !important;
+    }
+
+    .bti-lm-col2-2-2 {
+        padding-left: 0;
+    }
+
+    .ninja-forms-all-fields-wrap input[type="submit"]{
+        bottom: -25px;
+    }
+
+    .ninja-forms-field.ninja-forms-req {
+        width: 100% !important;
+    }
+
+}
