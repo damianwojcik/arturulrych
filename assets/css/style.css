@@ -307,7 +307,7 @@ a:hover {
 	right: 0;
 	top: 0;
 	width: 135px;
-	z-index: 9999;
+	z-index: 99;
 }
 
 .toggle-mobile .close_line, .toggle-mobile::before, .toggle-mobile::after {
@@ -500,7 +500,7 @@ a:hover {
 }
 
 .menu-titles ul li a:hover {
-	color: rgba(255, 255, 255, 0.7);
+	color: #FFF;
 }
 /* END MENU-TITLES */
 
@@ -558,7 +558,7 @@ a:hover {
 
 .categories ul li a:hover,
 .categories ul li.active a {
-	color: rgba(255, 255, 255, 0.7);
+	color: #FFF;
 }
 
 .categories ul li:after {

@@ -307,6 +307,16 @@
 /* BEGIN 420 */
 @media screen and (max-width:420px) {
 
+    .hero .wrap small {
+        font-size: 13px;
+        letter-spacing: 1.4px;
+    }
+
+    .hero .wrap #typed, .hero .wrap .typed-cursor {
+        font-size: 14px;
+        letter-spacing: 1.5px;
+    }
+
     .about .six.columns {
         width: 100%;
     }
