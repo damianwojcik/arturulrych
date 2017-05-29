@@ -91,6 +91,7 @@ function galleries() {
         'show_admin_column'          => true,
         'show_in_nav_menus'          => true,
         'show_tagcloud'              => true,
+        'default_term'               => 'projekty-artystyczne'
     );
     register_taxonomy( 'galleries', array( 'gallery' ), $args );
 

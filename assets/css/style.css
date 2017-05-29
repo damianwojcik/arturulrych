@@ -473,7 +473,7 @@ a:hover {
 	text-align: center;
 	line-height: 1.2;
 	font-size: 13px;
-	height: 110px;
+	min-height: 110px;
 	overflow: hidden;
 }
 
