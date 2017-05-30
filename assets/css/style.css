@@ -307,7 +307,7 @@ a:hover {
 	right: 0;
 	top: 0;
 	width: 135px;
-	z-index: 99;
+	z-index: 9999;
 }
 
 .toggle-mobile .close_line, .toggle-mobile::before, .toggle-mobile::after {
@@ -326,10 +326,12 @@ a:hover {
 
 .toggle-mobile::after {
 	transform: translateY(14px);
+	-webkit-transform: translateY(14px);
 }
 
 .toggle-mobile::before {
 	transform: translateY(-14px);
+	-webkit-transform: translateY(-14px);
 }
 
 .menu--open .toggle-mobile .close_line, .menu--open .toggle-mobile::before, .menu--open .toggle-mobile::after {
@@ -338,10 +340,12 @@ a:hover {
 
 .menu--open .toggle-mobile::after {
 	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
 }
 
 .menu--open .toggle-mobile::before {
 	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
 }
 
 .menu--open .toggle-mobile .close_line {

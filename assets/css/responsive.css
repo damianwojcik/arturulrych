@@ -36,6 +36,7 @@
         right: 0;
         top: 0;
         transform: translateX(1000px);
+        -webkit-transform: translateX(1000px);
         transition: all 0.7s ease 0s;
         -webkit-transition: all 0.7s ease 0s;
         width: 40vw;
