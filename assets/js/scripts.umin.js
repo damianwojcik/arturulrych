@@ -8,7 +8,7 @@ jQuery(document).ready(function($){
 
     $wind.on('resize', function(){
         windW = $wind.width(),
-            windH = $wind.height();
+        windH = $wind.height();
     });
 
     //init functions
@@ -18,11 +18,36 @@ jQuery(document).ready(function($){
     initMap();
     init_isotopes();
     lazy_load();
+    equalizeColumnsHeight();
 
     //b-lazy lazy load
     function lazy_load(){
         var blazy_item = $('.b-lazy');
         if (blazy_item.length > 0){var bLazy = new Blazy(); }
+    }
+
+    // lightbox
+    lightbox.option({
+        'resizeDuration': 300,
+        'wrapAround': true,
+        'fadeDuration': 300,
+        'albumLabel': 'Zdjęcie %1 z %2'
+    });
+
+    // equalize height of columns
+    function equalizeColumnsHeight() {
+
+        var highestColumn = 0;
+
+        $('.column.six.columns').each(function() {
+
+            if ($(this).height() > highestColumn) {
+                highestColumn = $(this).height();
+            }
+
+        });
+
+        $('.column.six.columns').css("min-height", highestColumn + "px");
     }
 
     // init single isotope by id
