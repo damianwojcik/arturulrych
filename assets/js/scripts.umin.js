@@ -9,6 +9,7 @@ jQuery(document).ready(function($){
     $wind.on('resize', function(){
         windW = $wind.width(),
         windH = $wind.height();
+        equalizeColumnsHeight();
     });
 
     //init functions
@@ -37,17 +38,27 @@ jQuery(document).ready(function($){
     // equalize height of columns
     function equalizeColumnsHeight() {
 
-        var highestColumn = 0;
+        if(windW > 420) {
 
-        $('.column.six.columns').each(function() {
+            var highestColumn = 0;
 
-            if ($(this).height() > highestColumn) {
-                highestColumn = $(this).height();
-            }
+            $('.column.six.columns').each(function() {
 
-        });
+                if ($(this).height() > highestColumn) {
+                    highestColumn = $(this).height();
+                }
 
-        $('.column.six.columns').css("min-height", highestColumn + "px");
+            });
+
+            $('.column.six.columns').css("min-height", highestColumn + "px");
+
+        } else {
+
+            $('.column.six.columns').css("min-height", 0);
+
+        }
+
+
     }
 
     // init single isotope by id
