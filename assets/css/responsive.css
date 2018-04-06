@@ -170,10 +170,9 @@
         margin-left: 0;
     }
 
-    .image-hover img {
+    .image-hover-img {
         width: 100%;
-        height: auto;
-        max-height: 250px;
+        height: 250px;
     }
 
 }
@@ -352,7 +351,7 @@
         padding: 0;
     }
 
-    .image-hover img {
+    .image-hover-img {
         max-height: 200px;
     }
 

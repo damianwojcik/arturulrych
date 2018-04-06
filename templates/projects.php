@@ -74,15 +74,14 @@
 
                                         <li class="<?php echo slugify($section) . ' ' . slugify($category->post_title); ?>">
                                             <figure class="image-hover">
-                                                <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                                     data-src="<?php echo $image['sizes']['medium']; ?>"
-                                                     alt="<?php echo $image['alt']; ?>"/>
-                                                <a href="<?php echo $image['url']; ?>" data-lightbox="<?php echo slugify($category->post_title); ?>">
-                                                    <figcaption>
-                                                        <h3><?php echo $image['title']; ?></h3>
-                                                        <h4><?php echo $category->post_title; ?></h4>
-                                                    </figcaption>
-                                                </a>
+                                                <div class="image-hover-img b-lazy" data-src="<?php echo $image['sizes']['medium']; ?>">
+                                                    <a href="<?php echo $image['url']; ?>" data-lightbox="<?php echo slugify($category->post_title); ?>">
+                                                        <figcaption>
+                                                            <h3><?php echo $image['title']; ?></h3>
+                                                            <h4><?php echo $category->post_title; ?></h4>
+                                                        </figcaption>
+                                                    </a>
+                                                </div>
                                             </figure>
                                         </li>
 
