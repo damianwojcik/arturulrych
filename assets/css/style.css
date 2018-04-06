@@ -101,8 +101,7 @@ a:hover {
 
 .image-hover-img {
 	background-size: cover;
-	background-position: center;
-	vertical-align: top;
+	background-position: top;
 	height: 200px;
 	width: 100%;
 }
