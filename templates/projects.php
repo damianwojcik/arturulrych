@@ -74,7 +74,7 @@
 
                                         <li class="<?php echo slugify($section) . ' ' . slugify($category->post_title); ?>">
                                             <figure class="image-hover">
-                                                <div class="image-hover-img b-lazy" data-src="<?php echo $image['sizes']['medium']; ?>">
+                                                <div class="image-hover-img b-lazy" data-src="<?php echo $image['sizes']['large']; ?>">
                                                     <a href="<?php echo $image['url']; ?>" data-lightbox="<?php echo slugify($category->post_title); ?>">
                                                         <figcaption>
                                                             <h3><?php echo $image['title']; ?></h3>
