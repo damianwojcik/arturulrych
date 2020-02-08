@@ -50,6 +50,7 @@ function gallery_post_type() {
         'exclude_from_search'   => false,
         'publicly_queryable'    => true,
         'capability_type'       => 'post',
+        'show_in_rest'          => true,
     );
 
     register_post_type( 'gallery', $args );
@@ -91,6 +92,7 @@ function galleries() {
         'show_admin_column'          => true,
         'show_in_nav_menus'          => true,
         'show_tagcloud'              => true,
+        'show_in_rest'               => true,
         'default_term'               => 'projekty-artystyczne'
     );
     register_taxonomy( 'galleries', array( 'gallery' ), $args );
